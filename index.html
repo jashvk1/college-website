@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Marwadi University | College Website</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f7fb;
+        color: #253047;
+      }
+      header {
+        background: #163a70;
+        color: white;
+        padding: 24px;
+        text-align: center;
+      }
+      nav {
+        background: #102b53;
+        padding: 12px;
+        text-align: center;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 12px;
+      }
+      main {
+        max-width: 950px;
+        margin: auto;
+        padding: 20px;
+      }
+      section {
+        background: white;
+        padding: 22px;
+        margin: 18px 0;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px #0001;
+      }
+      h2 {
+        color: #163a70;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 12px;
+      }
+      .tile {
+        padding: 18px;
+        background: #e9f1ff;
+        border-radius: 8px;
+        text-align: center;
+      }
+      .gallery .tile {
+        min-height: 100px;
+        display: grid;
+        place-items: center;
+      }
+      footer {
+        text-align: center;
+        background: #163a70;
+        color: white;
+        padding: 18px;
+      }
+      @media (max-width: 550px) {
+        nav a {
+          display: inline-block;
+          margin: 7px;
+        }
+        main {
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Marwadi University</h1>
+      <p>Rajkot, Gujarat | College Information Website</p>
+    </header>
+    <nav>
+      <a href="#about">About</a><a href="#outcomes">Outcomes</a
+      ><a href="#courses">Courses</a><a href="#events">Events</a
+      ><a href="#recruiters">Recruiters</a>
+    </nav>
+    <main>
+      <section id="about">
+        <h2>Vision</h2>
+        <p>
+          To promote learning, innovation and professional growth through
+          quality education.
+        </p>
+        <h2>Mission</h2>
+        <p>
+          To encourage practical skills, ethical values, research and industry
+          readiness among students.
+        </p>
+      </section>
+      <section id="outcomes">
+        <h2>Program Specific Outcomes (CSE)</h2>
+        <p>1. Apply programming and computing concepts to solve problems.</p>
+        <p>2. Develop software and web applications using modern tools.</p>
+      </section>
+      <section id="courses">
+        <h2>Courses Offered</h2>
+        <div class="grid">
+          <div class="tile">Computer Science & Engineering</div>
+          <div class="tile">Information Technology</div>
+          <div class="tile">Mechanical Engineering</div>
+          <div class="tile">Civil Engineering</div>
+        </div>
+      </section>
+      <section id="events">
+        <h2>Events Gallery</h2>
+        <div class="grid gallery">
+          <div class="tile">
+            🎓<br /><img
+              src="img3.png"
+              alt="Convocation"
+              height="100"
+              width="100"
+            />
+          </div>
+          <div class="tile">
+            💻<br /><img
+              src="img2.jpg"
+              alt="Hackathon"
+              height="100"
+              width="100"
+            />
+          </div>
+          <div class="tile">
+            🎉<br /><img
+              src="img1.jpg"
+              alt="Cultural Fest"
+              height="100"
+              width="100"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="recruiters">
+        <h2>Top Recruiters</h2>
+        <div class="grid">
+          <div class="tile">Tata Consultancy Services</div>
+          <div class="tile">Infosys</div>
+          <div class="tile">Wipro</div>
+        </div>
+      </section>
+    </main>
+    <footer>Web Technology Practical | College Website</footer>
+  </body>
+</html>
